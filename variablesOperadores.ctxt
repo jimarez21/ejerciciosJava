@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=variablesOperadores
+comment1.params=
+comment1.target=variablesOperadores()
+comment2.params=x\ y
+comment2.target=double\ getSuma(int,\ int)
+comment3.params=r
+comment3.target=double\ getAreaCirculo(double)
+comment4.params=g
+comment4.target=double\ temperatura(double)
+numComments=5

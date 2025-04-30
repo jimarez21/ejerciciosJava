@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=condicionales
+comment1.params=
+comment1.target=condicionales()
+comment2.params=n
+comment2.target=java.lang.String\ par(int)
+comment3.params=a\ b\ c
+comment3.target=int\ mayor(int,\ int,\ int)
+numComments=4
