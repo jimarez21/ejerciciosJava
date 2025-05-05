@@ -24,4 +24,14 @@ public class condicionales
             }
         }
     }
+    public boolean bisiesto(int anio) {
+        if(anio%100==0 && anio!=400) {
+            return false;
+        } else {
+            if(anio%4==0) {
+                return true;
+            }
+            return false;
+        }
+    }
 }
