@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=arreglos
+comment1.params=
+comment1.target=arreglos()
+comment2.params=lista
+comment2.target=int\ sumaArray(int[])
+comment3.params=lista
+comment3.target=int\ mayor(int[])
+comment4.params=lista
+comment4.target=void\ invertir(java.lang.String[])
+comment5.params=lista
+comment5.target=void\ imprimir(java.lang.String[])
+numComments=6

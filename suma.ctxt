@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=suma
-comment1.params=
-comment1.target=suma()
-comment2.params=x\ y
-comment2.target=double\ getSuma(int,\ int)
-comment3.params=r
-comment3.target=double\ getAreaCirculo(double)
-numComments=4
