@@ -24,16 +24,19 @@ public class arreglos
         return n;
     }
     public void invertir(String [] lista){
-        String [] invertida = lista;
+        String [] invertida = {"Lista Vacia"};
         int cont=0;
+        String aux = "";
         imprimir(lista);
         imprimir(invertida);
+        invertida = lista;
+        imprimir(invertida);
+        System.out.println(lista);
         for(int x = lista.length-1;x>=0;x--){
-            System.out.println("X: "+x);
-            System.out.println("Cont: "+cont);
-            invertida[cont] = lista[x];
-            System.out.println("lista: "+x);
-            //System.out.println(lista[x]);
+            aux = lista[x];
+            System.out.println(aux);
+            invertida[cont] = aux;
+            System.out.println(aux);
             cont++;
         }
         imprimir(lista);
