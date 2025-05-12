@@ -23,34 +23,34 @@ public class arreglos
         }
         return n;
     }
-    public void invertir(String [] lista){
-        String [] invertida = {"Lista Vacia"};
-        int cont=0;
-        String aux = "";
+    public void invertir(int [] lista){
+        int aux = 0;
+        int inicio = 0;
+        int fin = lista.length-1;
+        System.out.println("\n Arreglo original: ");
         imprimir(lista);
-        imprimir(invertida);
-        invertida = lista;
-        imprimir(invertida);
-        System.out.println(lista);
-        for(int x = lista.length-1;x>=0;x--){
-            aux = lista[x];
-            System.out.println(aux);
-            invertida[cont] = aux;
-            System.out.println(aux);
-            cont++;
+        while(inicio < fin) {
+            aux = lista[inicio];
+            lista[inicio]=lista[fin];
+            lista[fin]=aux;
+            inicio++;
+            fin--;
         }
+        System.out.println("\n Arreglo invertido: ");
         imprimir(lista);
-        imprimir(invertida);
     }
-    public void imprimir(String[] lista){
-        System.out.print("{");
-        for(int x=0;x<lista.length;x++){
-            if(x==lista.length-1){
-                System.out.print(lista[x]);
-            }else{
-                System.out.print(lista[x]+",");
+    public static void imprimir(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+    public int concurrencia(int [] lista, int elemento){
+        int cont=0;
+        for(int num : lista){
+            if(num==elemento){
+                cont++;
             }
         }
-        System.out.println("}");
+        return cont;
     }
 }

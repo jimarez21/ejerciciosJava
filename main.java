@@ -10,6 +10,7 @@ public class main {
         condicionales p = new condicionales();
         bucles pb = new bucles();
         arreglos pa = new arreglos();
+        funciones fun = new funciones();
         
         /*System.out.println("Hola println");
         System.out.println("Las suma de 8 + 9 es: "+r);
@@ -70,8 +71,20 @@ public class main {
         int [] lista = {5,5,5,5,5};
         System.out.println(pa.sumaArray(lista));
         */
-        
-        String [] lista = {"9","7","5","88","3"};
+        /*
+        int [] lista = {9,7,5,88,3,8    };
         pa.invertir(lista);
+        
+        int [] lista = {9,7,5,88,3,8,4,3,5,3,6};
+        System.out.println("Con currencia: "+pa.concurrencia(lista,9));
+        */
+        /*
+        System.out.println("Ingrese un numero para ver si es primo: ");
+        x = teclado.nextInt();
+        System.out.println("El numero es "+ (fun.primo(x)==true ? "Primo" : "NO es Primo"));
+        */
+        System.out.println("Ingrese un numero para ver si es primo: ");
+        x = teclado.nextInt();
+        System.out.println("El numero es "+ (fun.primo(x)==true ? "Primo" : "NO es Primo"));
     }
 }
