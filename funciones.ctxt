@@ -6,4 +6,6 @@ comment2.params=n
 comment2.target=boolean\ primo(int)
 comment3.params=palabra
 comment3.target=boolean\ palindromo(java.lang.String)
-numComments=4
+comment4.params=
+comment4.target=void\ calculadora()
+numComments=5

@@ -5,12 +5,14 @@ public class main {
     public static void main(String[]args) {
         Scanner teclado = new Scanner(System.in);
         int x,y,z;
+        String sx,sy,sz;
         double r;
         variablesOperadores s1 = new variablesOperadores();
         condicionales p = new condicionales();
         bucles pb = new bucles();
         arreglos pa = new arreglos();
         funciones fun = new funciones();
+        avanza2 av = new avanza2();
         
         /*System.out.println("Hola println");
         System.out.println("Las suma de 8 + 9 es: "+r);
@@ -82,9 +84,21 @@ public class main {
         System.out.println("Ingrese un numero para ver si es primo: ");
         x = teclado.nextInt();
         System.out.println("El numero es "+ (fun.primo(x)==true ? "Primo" : "NO es Primo"));
-        */
+        
         System.out.println("Ingrese un numero para ver si es primo: ");
         x = teclado.nextInt();
         System.out.println("El numero es "+ (fun.primo(x)==true ? "Primo" : "NO es Primo"));
+        
+        System.out.println("Ingresa una palabra: ");
+        sx = teclado.nextLine();
+        System.out.println("La palabra es "+ (fun.palindromo(sx)==true ? "Palindromo" : "NO es Palindromo"));
+        
+        fun.calculadora();
+        */
+       
+        /*
+        */
+        int [] lista = {10,9,8,7,6,5,4,3,2,1};
+        av.burbuja(lista);
     }
 }
