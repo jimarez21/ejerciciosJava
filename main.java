@@ -98,7 +98,8 @@ public class main {
        
         /*
         */
-        int [] lista = {10,9,8,7,6,5,4,3,2,1};
+        //int [] lista = {10,9,8,7,6,5,4,3,2,1};
+        int [] lista = {9,7,5,88,3,8,4,3,5,3,6};
         av.burbuja(lista);
     }
 }
