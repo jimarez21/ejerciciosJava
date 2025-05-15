@@ -97,9 +97,16 @@ public class main {
         */
        
         /*
-        */
+        
         //int [] lista = {10,9,8,7,6,5,4,3,2,1};
         int [] lista = {9,7,5,88,3,8,4,3,5,3,6};
         av.burbuja(lista);
+        
+        int [][] lista = {{3,5,6,7,7,8},
+                            {6,9,0,4,6,8},
+                            {4,7,9,8,3,4}};
+        av.busqueda(lista, 0);
+        */
+        av.frecDicc("PARANGARICUTIMIRICUARO");
     }
 }
