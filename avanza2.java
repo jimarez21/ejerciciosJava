@@ -48,9 +48,13 @@ public class avanza2
         int cont = 0;
         char [] letras = palabra.toCharArray();
         ArrayList <Integer> incidencias = new ArrayList<Integer>();
-        /*
+        ArrayList<String> abc = new ArrayList<String>();
+        abc.add(String.valueOf(letras[0]));
         for(int x = 0; x < size; x++){
             char temp = letras[x];
+            if(! abc.contains(String.valueOf(temp))) {
+                abc.add(String.valueOf(temp));
+            }
             for(int y = 0; y < size; y++){
                 if(temp == letras[y]){
                     cont++;//SOLO CONTEO
@@ -59,15 +63,26 @@ public class avanza2
             incidencias.add(cont);
             cont = 0;
         }
-        */
-        for(int i = 0; i < letras.length; i++){
-            System.out.println
-        }
         System.out.println("Incidencias");
         imprimirChar(letras);
-        for (int i : incidencias){
-            System.out.print(i + " ");
+        abc.sort(null);
+        for(String str : abc){
+            int veces = 0;
+            for(int s=0;s<size;s++){
+                if(str.equals(String.valueOf(letras[s])) && veces==0){
+                    veces++;
+                    System.out.println(str+" : "+incidencias.get(s));
+                }
+            }
         }
+        /*
+         * 
+         * 
+         * //abc.add(String.valueOf(letras[0]));
+         * for (int i : incidencias){
+         *     System.out.print(i + " ");
+         *  }
+        */
     }
     public static void imprimir(int[] arr) {
         for (int num : arr) {

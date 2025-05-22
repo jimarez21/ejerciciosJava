@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=generadorPw
+comment1.params=
+comment1.target=generadorPw()
+comment2.params=
+comment2.target=void\ generador()
+comment3.params=n
+comment3.target=void\ generador(int)
+numComments=4
