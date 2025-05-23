@@ -2,20 +2,20 @@ import java.util.*;
 
 public class generadorPw
 {
-
     public String key;
-    
+    public String letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public String numeros = "0123456789";
+    public String caracteres = "!@#$%^&*()_+-=";   
     public generadorPw()
     {   
         key = "";
     }
-    
     public void generador(){
         Scanner teclado =  new Scanner(System.in);
         int encendido = 6;
-        double x,y;
+        int rasgo = 0;
         while(encendido!=0){
-            System.out.println("GENERADOR"+
+            System.out.println("GENERADOR DE CONTRASEÑAS"+
                             "\n ¿Cuantos caracteres desea generar para su clave?"+
                             "\n [1] 8 Caracteres"+
                             "\n [2] 10 Caracteres"+
@@ -25,68 +25,56 @@ public class generadorPw
             encendido=teclado.nextInt();
             switch(encendido){
                 case 1:
-                    System.out.println("\n --SUMA--");
-                    System.out.println("\nIngrese la primera cantidad a sumar: ");
-                    x = teclado.nextDouble();
-                    System.out.println("Ingrese la segunda cantidad a sumar: ");
-                    y = teclado.nextDouble();
-                    System.out.println(" "+x+" + "+y+" = "+(x+y));
-                    System.out.println("¿Desea hacer otra operacion?"+
-                                        "\n [1] SI"+
-                                        "\n [2] NO");
-                    encendido = teclado.nextInt();
-                    if(encendido == 2){
-                        encendido = 0;
-                    }
-                    break;
-                
+                    System.out.println("\n --8 CARACTERES--");
+                    System.out.println("\nSELECCIONE LOS CARACTERES A USAR: "+
+                                        "\n [1] Letras {A-Z, a-z}"+
+                                        "\n [2] Numeros {0-9}"+
+                                        "\n [3] Simbolos {!@#$%^&*_+-=}"+
+                                        "\n [4] Letras y Numeros"+
+                                        "\n [5] Letras y Simbolos"+
+                                        "\n [6] Simbolos y Numeros"+
+                                        "\n [7] Letras, Numeros y Simbolos"+
+                                        "\n [8] Cancelar");
+                    rasgo = teclado.nextInt();
+                    
                 case 2:
-                    System.out.println("\n --RESTA--");
-                    System.out.println("\nIngrese la primera cantidad a restar: ");
-                    x = teclado.nextDouble();
-                    System.out.println("Ingrese la segunda cantidad a restar: ");
-                    y = teclado.nextDouble();
-                    System.out.println(" "+x+" - "+y+" = "+(x-y));
-                    System.out.println("¿Desea hacer otra operacion?"+
-                                        "\n [1] SI"+
-                                        "\n [2] NO");
-                    encendido = teclado.nextInt();
-                    if(encendido == 2){
-                        encendido = 0;
-                    }
-                    break;
+                    System.out.println("\n --10 CARACTERES--");
+                    System.out.println("\nSELECCIONE LOS CARACTERES A USAR: "+
+                                        "\n [1] Letras {A-Z, a-z}"+
+                                        "\n [2] Numeros {0-9}"+
+                                        "\n [3] Simbolos {!@#$%^&*_+-=}"+
+                                        "\n [4] Letras y Numeros"+
+                                        "\n [5] Letras y Simbolos"+
+                                        "\n [6] Simbolos y Numeros"+
+                                        "\n [7] Letras, Numeros y Simbolos"+
+                                        "\n [8] Cancelar");
+                    rasgo = teclado.nextInt();
                     
                 case 3:
-                    System.out.println("\n --MULTIPLICACION--");
-                    System.out.println("\nIngrese la primera cantidad: ");
-                    x = teclado.nextDouble();
-                    System.out.println("Ingrese la segunda cantidad: ");
-                    y = teclado.nextDouble();
-                    System.out.println(" "+x+" x "+y+" = "+(x*y));
-                    System.out.println("¿Desea hacer otra operacion?"+
-                                        "\n [1] SI"+
-                                        "\n [2] NO");
-                    encendido = teclado.nextInt();
-                    if(encendido == 2){
-                        encendido = 0;
-                    }
-                    break;
+                    System.out.println("\n --12 CARACTERES--");
+                    System.out.println("\nSELECCIONE LOS CARACTERES A USAR: "+
+                                        "\n [1] Letras {A-Z, a-z}"+
+                                        "\n [2] Numeros {0-9}"+
+                                        "\n [3] Simbolos {!@#$%^&*_+-=}"+
+                                        "\n [4] Letras y Numeros"+
+                                        "\n [5] Letras y Simbolos"+
+                                        "\n [6] Simbolos y Numeros"+
+                                        "\n [7] Letras, Numeros y Simbolos"+
+                                        "\n [8] Cancelar");
+                    rasgo = teclado.nextInt();
                     
                 case 4:
-                    System.out.println("\n --DIVISION--");
-                    System.out.println("\nIngrese el dividendo: ");
-                    x = teclado.nextDouble();
-                    System.out.println("Ingrese el divisor: ");
-                    y = teclado.nextDouble();
-                    System.out.println(" "+x+"/"+y+" = "+(x/y));
-                    System.out.println("¿Desea hacer otra operacion?"+
-                                        "\n [1] SI"+
-                                        "\n [2] NO");
-                    encendido = teclado.nextInt();
-                    if(encendido == 2){
-                        encendido = 0;
-                    }
-                    break;
+                    System.out.println("\n --16  CARACTERES--");
+                    System.out.println("\nSELECCIONE LOS CARACTERES A USAR: "+
+                                        "\n [1] Letras {A-Z, a-z}"+
+                                        "\n [2] Numeros {0-9}"+
+                                        "\n [3] Simbolos {!@#$%^&*_+-=}"+
+                                        "\n [4] Letras y Numeros"+
+                                        "\n [5] Letras y Simbolos"+
+                                        "\n [6] Simbolos y Numeros"+
+                                        "\n [7] Letras, Numeros y Simbolos"+
+                                        "\n [8] Cancelar");
+                    rasgo = teclado.nextInt();
                     
                 case 5:
                     System.out.println("ADIOS");
@@ -95,7 +83,11 @@ public class generadorPw
             }
         }
     }
-    public void generador(int n){
-        
+    public void generador(int l, int c){
+        int randomNum = (int)(Math.random() * 11);
+        switch(c){
+            case 1:
+                while(l=!)
+        }
     }
 }
