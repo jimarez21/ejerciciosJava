@@ -83,11 +83,61 @@ public class generadorPw
             }
         }
     }
-    public void generador(int l, int c){
-        int randomNum = (int)(Math.random() * 11);
+    public int numRandom(int rango){
+        return (int)(Math.random()*rango);
+    }
+    public void tipo(int l, int c){
         switch(c){
-            case 1:
-                while(l=!)
+            case 1://SOLO LETRAS
+                while(l!=key.length()){
+                    char temp;
+                    temp = letras.charAt(numRandom(letras.length()));
+                    String temps = ""+temp;
+                    if(numRandom(2)==1){
+                        key = key + temps.toLowerCase();
+                    }else {
+                        key = key + temps.toUpperCase();
+                    }
+                }
+            System.out.println("PW: "+key);
+            break;
+            
+            case 2://SOLO NUMEROS
+                while(l!=key.length()){
+                    char temp;
+                    temp = numeros.charAt(numRandom(numeros.length()));
+                    key = key + temp;
+                }
+            System.out.println("PW: "+key);
+            break;
+            
+            case 3:
+                while(l!=key.length()){
+                    char temp;
+                    temp = caracteres.charAt(numRandom(caracteres.length()));
+                    key = key + temp;
+                }
+            System.out.println("PW: "+key);
+            
+            case 4://LETRAS Y NUMEROS
+                while(l!=key.length()){
+                    if(numRandom(2)==1){
+                        char temp;
+                        temp = letras.charAt(numRandom(letras.length()));
+                        String temps = ""+temp;
+                        if(numRandom(2)==1){
+                            key = key + temps.toLowerCase();
+                        }else {
+                            key = key + temps.toUpperCase();
+                        }
+                    } else{
+                        char temp;
+                        temp = numeros.charAt(numRandom(numeros.length()));
+                        key = key + temp;
+                    }
+                }
+            System.out.println("PW: "+key);
+            break;
         }
     }
 }

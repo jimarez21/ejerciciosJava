@@ -13,6 +13,7 @@ public class main {
         arreglos pa = new arreglos();
         funciones fun = new funciones();
         avanza2 av = new avanza2();
+        generadorPw gp= new generadorPw();
         
         /*System.out.println("Hola println");
         System.out.println("Las suma de 8 + 9 es: "+r);
@@ -106,7 +107,9 @@ public class main {
                             {6,9,0,4,6,8},
                             {4,7,9,8,3,4}};
         av.busqueda(lista, 0);
-        */
+        
         av.frecDicc("PARANGARICUTIMIRICUARO");
+        */
+        gp.tipo(10,4);  
     }
 }
