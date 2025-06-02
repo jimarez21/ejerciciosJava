@@ -109,7 +109,13 @@ public class main {
         av.busqueda(lista, 0);
         
         av.frecDicc("PARANGARICUTIMIRICUARO");
+        
+        gp.tipo(16,7);  
+        
+       
+        persona persona1 = new persona("Ana", 25, "Femenino");
+        persona1.saludar();
+        System.out.println(persona1.esMayorDeEdad());
         */
-        gp.tipo(10,4);  
     }
 }

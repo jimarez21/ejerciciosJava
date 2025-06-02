@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=persona
+comment1.params=nombre\ edad\ genero
+comment1.target=persona(java.lang.String,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ saludar()
+comment3.params=
+comment3.target=boolean\ esMayorDeEdad()
+comment4.params=nombre
+comment4.target=void\ setNombre(java.lang.String)
+comment5.params=edad
+comment5.target=void\ setEdad(int)
+comment6.params=e
+comment6.target=void\ validaEdad(int)
+numComments=7
