@@ -14,6 +14,7 @@ public class main {
         funciones fun = new funciones();
         avanza2 av = new avanza2();
         generadorPw gp= new generadorPw();
+        persona persona1 = new persona("Ana", 25, "Femenino");
         
         /*System.out.println("Hola println");
         System.out.println("Las suma de 8 + 9 es: "+r);
