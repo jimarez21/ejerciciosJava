@@ -5,6 +5,7 @@ public class persona
     String nombre;
     int edad;
     String genero;
+    public persona(){}
     public persona(String nombre, int edad, String genero)
     {
         this.nombre = nombre;
