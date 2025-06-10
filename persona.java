@@ -22,11 +22,21 @@ public class persona
     }
     void setNombre(String nombre){
         this.nombre=nombre;
-        System.out.println("Ahora el nombre es: "+nombre);
+    }
+    String getNombre(){
+        return nombre;
     }
     void setEdad(int edad){
         validaEdad(edad);
-        System.out.println("Ahora la edad es: "+edad);
+    }
+    int getEdad(){
+        return edad;
+    }
+    void setGenero(String genero){
+        this.genero = genero;
+    }
+    String getGenero(){
+        return genero;
     }
     void validaEdad(int e){
         if(e>0)

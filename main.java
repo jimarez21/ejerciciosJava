@@ -15,7 +15,7 @@ public class main {
         avanza2 av = new avanza2();
         generadorPw gp= new generadorPw();
         persona persona1 = new persona("Ana", 25, "Femenino");
-        
+        estudiante estudiante1 = new estudiante("Ingenieria",7.5,"Luis",20,"Masculino");
         /*System.out.println("Hola println");
         System.out.println("Las suma de 8 + 9 es: "+r);
         s1 = new variablesOperadores();
@@ -118,5 +118,7 @@ public class main {
         persona1.saludar();
         System.out.println(persona1.esMayorDeEdad());
         */
+        estudiante1.saludar();
+        estudiante1.estudiar();
     }
 }
